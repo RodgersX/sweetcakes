@@ -1,6 +1,7 @@
 <template>
     <v-toolbar flat>
         <v-toolbar-title>Sweet Cakes</v-toolbar-title>
+        <v-icon>mdi-google</v-icon>
         <v-spacer></v-spacer>
         <v-toolbar-items class="mr-10 tool_items">
         <v-btn text class="toolbar-item" to="/">Home</v-btn>
@@ -17,14 +18,13 @@
 
 <style scoped>
 .tool_items {
-  background: #FFCDD2;
-  border-radius: 7px;
+    background: #FFCDD2;
+    border-radius: 7px;
 }
 
 .tool_item {
   text-transform: capitalize !important;
 }
-
 
 .toolbar-item:active,
 .toolbar-item:hover
