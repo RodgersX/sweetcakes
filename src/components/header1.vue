@@ -1,7 +1,7 @@
 <template>
     <v-toolbar flat>
         <v-toolbar-title>Sweet Cakes</v-toolbar-title>
-        <v-icon>mdi-google</v-icon>
+        <v-icon>mdi-serach-outline</v-icon>
         <v-spacer></v-spacer>
         <v-toolbar-items class="mr-10 tool_items">
         <v-btn text class="toolbar-item" to="/">Home</v-btn>
@@ -22,7 +22,7 @@
     border-radius: 7px;
 }
 
-.tool_item {
+.toolbar-item {
   text-transform: capitalize !important;
 }
 

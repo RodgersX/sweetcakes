@@ -17,14 +17,13 @@
 
 <style scoped>
 .tool_items {
-  background: #FFCDD2;
-  border-radius: 7px;
+    background: #FFCDD2;
+    border-radius: 7px;
 }
 
-.tool_item {
+.toolbar-item {
   text-transform: capitalize !important;
 }
-
 
 .toolbar-item:active,
 .toolbar-item:hover
@@ -32,5 +31,6 @@
    text-decoration: underline !important;
    text-decoration-color: #EF9A9A !important;
 }
+
 
 </style>
