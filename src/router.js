@@ -32,7 +32,12 @@ export default new Router({
       path: '/contacts',
       name: 'contacts',
       component: () => import('./views/contacts.vue')
-    }
+    },
+    {
+      path: '/Recipe/:Pid',
+      name: 'cake',
+      component: () => import('./components/id.vue')
+    },
 
   ]
 })

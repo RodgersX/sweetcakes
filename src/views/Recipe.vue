@@ -61,11 +61,10 @@
         },
 
         methods: {
-            toCake(cakeId) {
-                this.$router.push({name:'cake', params:{Pid:cakeId}})
+            toCake(Id) {
+                this.$router.push({name:'cake', params:{Pid:Id}})
              },
         }
-
 
     }
 </script>
