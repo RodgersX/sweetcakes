@@ -89,6 +89,7 @@ export default {
     border-bottom: 3px solid #EF9A9A;
     padding-bottom: 1.3rem;
     padding-top: 1.3rem;
+    width: 60%;
 }
 
 .edge {
