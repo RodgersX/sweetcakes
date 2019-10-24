@@ -3,7 +3,7 @@
     <Header></Header>
     <v-layout class="m-10 pa-50">
         <v-container class="cupcake">
-          <div color="#C0C0C0" class="font-italic">Cheesecake</div>
+          <div color="#C0C0C0" class="font-italic">Tart</div>
         </v-container>
 
         <v-container class="imagecake">
@@ -38,7 +38,7 @@
 
 <script>
 import Header from '../components/header1.vue'
-import Footer from '../components/footer.vue'
+import Footer from '../components/footer1.vue'
 export default {
     components: {
       Header,
@@ -46,7 +46,7 @@ export default {
     },
 
     data: () => ({
-        potrait: '/cheesecake.png',
+        potrait: '/one-page.png',
         bio: 'Lorem ipsum dolor sit amet,  quaerat magnam delectus amet earum facere nobis ad voluptas veniam, ipsum omnis. Labore, labore ut reiciendis.',
     })
   }
@@ -58,7 +58,7 @@ export default {
   font-family: 'Playfair Display', serif;
   transform: rotate(90deg);
   height: 32rem !important;
-  margin-top: 14rem;
+  margin-top: 15rem;
   margin-left: -30%;
   font-size: 4.7rem;
   color: #C0C0C0;
@@ -70,10 +70,10 @@ export default {
 }
 
 .pa-20 {
-    height: 25rem !important;
-    width: 31rem;
-    margin-top: 5rem;
-    margin-left: -7%;
+    height: 29rem !important;
+    width: 30rem;
+    margin-top: 3rem;
+    margin-left: -5%;
     border-radius: 8px;
 }
 

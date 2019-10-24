@@ -4,7 +4,7 @@
     <Header></Header>
     <v-layout class="m-10 pa-50">
         <v-container class="pa-20 cont">
-          <p class="display-3 font-wieght-medium cont-title">Contacts</p>
+          <p class="display-3">Contacts</p>
         </v-container>
     </v-layout>
     
@@ -33,7 +33,8 @@ export default {
   padding-top: 3.2rem;
 }  
 
-.cont-title {
+.display-3 {
+    width: 80%;
     font-family: 'Satisfy', cursive !important;
     border-bottom: 3px solid #EF9A9A;
     padding-bottom: 1.3rem;

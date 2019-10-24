@@ -2,9 +2,9 @@
   
   <div class="about">
     <Header></Header>
-    <v-layout class="m-10 pa-50">
-        <v-container class="pa-20 cont">
-          <p class="display-3 font-wieght-medium cont-title">About</p>
+    <v-layout>
+        <v-container class="cont">
+          <p class="display-3">About</p>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque nesciunt qui, 
             labore odit sed sint impedit vero? Quisquam voluptatem, nobis porro nihil quidem,
             ratione ex quos sed facilis hic dicta maiores ipsa velit et unde iusto impedit ipsum.
@@ -24,13 +24,13 @@
         </v-container>
 
         <v-container class="cont">
-          <p class="display-3 font-wieght-medium cont-title">Team</p>
+          <p class="display-3">Team</p>
           
           <v-layout row wrap>
             <v-flex v-for="person in team" :key="person.name">
-              <v-card  flat :height="height" :width="width" class="ma-3">
+              <v-card flat :height="height" :width="width" class="ma-3">
                 <v-img :height="height" :width="width" :src="person.avatar"></v-img>
-                <v-card-title class="red--text lighten-2">{{ person.name }}</v-card-title>
+                <v-btn text class="red--text" :to="person.href">{{ person.name }}</v-btn>
                 <v-card-text>{{ person.role }}</v-card-text>
               </v-card>
             </v-flex>
@@ -50,44 +50,36 @@ export default {
   },
   
   data: () => ({
-      // img: 'https://www.pexels.com/photo/chocolate-cake-with-white-icing-and-strawberry-on-top-with-chocolate-69817/'
       width: 200,
       height: 200,
 
       team: [
-        {name: 'Jack Stockton', role: 'Co-Founder/CEO', avatar: '/jack.jpg'},
-        {name: 'Jane Oloo', role: 'Head Pastry Chef', avatar: '/jane.jpg'}
+        {name: 'Jane Oloo', role: 'Co-Founder/CEO', avatar: '/potrait.jpg', href: '/about1'},
+        {name: 'Janice Mwendwa', role: 'Head Pastry Chef', avatar: '/portrait1.jpg', href: '/about2'}
       ]
-      
   })
 }
 
 </script>
 
 <style scoped>
-
-
 .cont {
   width: 40%;
   padding-top: 50px;
 }  
 
-.cont-title {
+.red--text {
+  text-transform: capitalize !important;
+}
+
+.display-3 {
     font-family: 'Satisfy', cursive !important;
     border-bottom: 3px solid #EF9A9A;
     padding-bottom: 20px;
+    width: 70%;
 }
 
-.toolbar-item:active,
-.toolbar-item:hover
- {
-   text-decoration: underline !important;
-   text-decoration-color: #EF9A9A !important;
+.person-detail {
+    color: transparent;
 }
-
-.theme--light.v-application {
-    background-color: white !important;
-    /* color: rgba(0, 0, 0, 0.87); */
-}
-
 </style>

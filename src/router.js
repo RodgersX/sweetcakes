@@ -19,6 +19,11 @@ export default new Router({
       component: () => import('./views/About.vue')
     },
     {
+      path: '/about2',
+      name: 'about2',
+      component: () => import('./views/about2.vue')
+    },
+    {
       path: '/recipe',
       name: 'recipe',
       component: () => import('./views/Recipe.vue')
@@ -37,6 +42,16 @@ export default new Router({
       path: '/Recipe/:Pid',
       name: 'cake',
       component: () => import('./components/id.vue')
+    },
+    {
+      path: '/home1',
+      name: 'home1',
+      component: () => import('./views/home1.vue')
+    },
+    {
+      path: '/home2',
+      name: 'home2',
+      component: () => import('./views/home2.vue')
     },
 
   ]

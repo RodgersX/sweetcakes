@@ -1,6 +1,7 @@
 <template>
   <v-content>
    <div class="view-details" v-for="(item,index) in items" :key="index">
+     <Header></Header>
      <v-layout v-if="Id == item.Id">
         <v-flex xs12 fluid>
           <v-img :src="item.picture" class="image">
@@ -18,6 +19,7 @@
               {{ item.name }}
             </div>
           </v-layout>
+
           <v-layout column class="recipe">
             <v-flex xs10 md4 ma-4>
               <v-layout column>
@@ -34,7 +36,13 @@
 </template>
 
 <script>
+import Header from '../components/header2.vue'
 export default {
+
+  components: {
+    Header
+  },
+
   name: 'cake',
     data() {
         return { 

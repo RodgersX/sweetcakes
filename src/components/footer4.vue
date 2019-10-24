@@ -1,12 +1,12 @@
 <template>
     <div class="footer">
-        <v-btn text color="#C0C0C0" to="/">
+        <v-btn text color="#C0C0C0" to="/about">
             <v-icon>mdi-arrow-left</v-icon>
-            previous
+            Back
         </v-btn>
-        <v-btn text color="#C0C0C0" to="/home1">
-            next
+        <v-btn text color="#C0C0C0" to="/about2">
             <v-icon>mdi-arrow-right</v-icon>
+            next
         </v-btn>
     </div>
 </template>

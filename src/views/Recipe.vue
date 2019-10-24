@@ -1,8 +1,8 @@
 <template>
     <div class="recipe">
         <Header></Header>
-        <p class="pt-5 display-3 font-wieght-medium cont-title">Recipes</p>
-        <v-container class="my-5">
+        <p class="pt-12 display-3">Recipes</p>
+        <v-container>
             <v-layout row wrap>
                 <v-flex v-for="cake in cakes" :key="cake.name" dense class="flex-cont ma-2 pa-3"> 
                     <v-card flat :height="height" :width="width" class="card ma-5 pa-2" @click="toCake(cake.Id)">
@@ -10,8 +10,7 @@
                         <div class="red--text">{{ cake.name }}</div>
                         <div>
                             <v-card-actions class="pa-0">
-                                <!-- <v-card-text>Lorem ipsum dolor sit amet...</v-card-text> -->
-                                <v-btn text v-on:click="cake.isHidden = false" width="100%">See More
+                                <v-btn text v-on:click="cake.isHidden = false" width="100%" class="seemore">See More
                                     <v-btn icon>
                                         <v-icon>{{ show ? 'mdi-chevron-right' : 'mdi-chevron-down' }}</v-icon>
                                     </v-btn>
@@ -19,7 +18,6 @@
                             </v-card-actions>
                         </div>
                         
-                        <div class="flexgrow-1"></div>
                         <v-expand-transition>
                             <div>
                                 <v-card-text v-if="isHidden">{{ cake.recipe }}</v-card-text>
@@ -70,10 +68,15 @@
 </script>
 
 <style scoped>
-.cont-title {
+.display-3 {
     font-family: 'Satisfy', cursive !important;
     border-bottom: 3px solid #EF9A9A;
     padding-bottom: 20px;
+    width: 40%;
+}
+
+.seemore {
+    text-transform: capitalize !important;
 }
 
 .flex-cont {
@@ -88,5 +91,4 @@
     border: 1px solid #EF9A9A;
     border-radius: 3px;
 }
-
 </style>
