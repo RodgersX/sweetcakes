@@ -1,7 +1,7 @@
 <template>
     <v-toolbar flat>
         <v-toolbar-title class="logo_cont">
-          <v-img src="/logo.png" class="logo"></v-img>
+          <v-img src="/favicon.ico" class="logo"></v-img>
         </v-toolbar-title>
         <v-spacer></v-spacer>
         <v-toolbar-items class="mr-10 tool_items">

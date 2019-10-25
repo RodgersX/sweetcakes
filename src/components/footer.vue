@@ -12,10 +12,12 @@
 </template>
 
 <style scoped>
+
     .footer {
         display: flex;
         padding-left: 10px !important;
         margin-top: 2% !important;
     }
+
 </style>
 

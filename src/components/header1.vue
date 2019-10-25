@@ -1,7 +1,7 @@
 <template>
     <v-toolbar flat>
         <v-toolbar-title class="logo_cont">
-          <v-img src="/logo.png" class="logo"></v-img>
+          <v-img src="/favicon.ico" class="logo"></v-img>
         </v-toolbar-title>
         <v-icon>mdi-search-outline</v-icon>
         <v-spacer></v-spacer>
